@@ -37,7 +37,7 @@ The project was developed based on the attached design, which features:
 
 Here’s a preview of the implemented design:
 
-![Homepage](./Homepage%20(Copy).png)
+![Homepage](./Homepage(Copy).png)
 
 ---
 
