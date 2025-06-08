@@ -11,7 +11,8 @@ Welcome to my very first website built with HTML and CSS! This is my **first att
 - `tweets.html`: A second page with more content  
 
 ✅ **CSS**  
-- `style.css`: My very first CSS file! 🎨
+- `styles.css`: My very first CSS file! 🎨
+- `base.css`: extra styling for the pages.
 
 ---
 
@@ -19,7 +20,7 @@ Welcome to my very first website built with HTML and CSS! This is my **first att
 
 - Basic layout and structure  
 - Simple navigation between two pages  
-- Experimenting with CSS styling (colors, fonts, positioning)
+- Experimenting with CSS styling (colors, fonts)
 
 ---
 
