@@ -1,15 +1,38 @@
-body, main {
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 3rem;
+    background-color:lightgray;
+    padding: 1rem;
+    
+}
+
+header{
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+}
+
+ body main {
+    margin-top: 2rem;
     display:flex;
 }
-body> {
-flex-direction: column;
+body{
+    display:flex;
+    flex-direction: column;
 }
+
+h2, h3{
+    font-weight: bold;
+}
+
 main> {
 flex-direction: row;
 flex: auto;
 }
 article> {
-flex: 2;
+flex: 1;
 overflow-y: auto;
 }
 aside> {

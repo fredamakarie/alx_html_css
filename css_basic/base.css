@@ -60,12 +60,11 @@ body {
 	color: rgba(0, 0, 0, 0.8);
 }
 h1, h2, h3, h4, h5, h6, header {
-	font-family: 'Yeseva One', sans-serif;
+	font-family: "Helvetica", sans-serif;
 }
-article {
-}
+
 header {
-	border-bottom: 1px solid rgb(221,221,221);
+	border-bottom: 4px solid rgb(221,221,221);
 	transition: border-bottom-color 1s ease;
 }
 header a {
@@ -116,6 +115,7 @@ header .right {
 header {
 	padding: 20px 0;
 	height: 80px;
+    
 }
 header ul {
 	list-style: none;
@@ -125,6 +125,7 @@ header ul {
 header li {
 	display: inline;
 	vertical-align:middle;
+	color: beige;
 }
 header li:first-child {
 	margin: 0;
@@ -162,15 +163,15 @@ p {
 	margin-bottom: 15px;
 }
 h1 {
-	font-size: 36px;
+	font-size: 2rem;
 	margin: 40px 0 20px;
 }
 h2 {
-	font-size: 32px;
+	font-size: 1.5rem;
 	margin: 30px 0 15px;
 }
 h3 {
-	font-size: 28px;
+	font-size: 1.2rem;
 	margin: 25px 0 10px;
 }
 h4 {
