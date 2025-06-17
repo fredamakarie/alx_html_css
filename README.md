@@ -28,5 +28,5 @@ Welcome to my very first website built with HTML and CSS! This is my **first att
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/fredamakarie/alx_html_css.git
 
