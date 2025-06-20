@@ -1,0 +1,140 @@
+/*General styling*/
+*{
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin:0;
+ padding:0;
+ text-align: center;
+}
+@font-face {
+  font-family: 'source sans pro';
+  src: url("./Images/SourceSansPro-Regular.otf") format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*header*/
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2rem 3rem;
+}
+
+nav{
+    text-decoration: none;
+    display:flex;
+    list-style: none;
+    gap : 2em;
+    font-weight: bold;
+     color: white;
+    font-size: 12px;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+/*Main: Backgrounds*/
+main{
+    padding: 10rem;
+}
+
+.CoverBG {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+    height:800px;
+    overflow: auto;
+}
+
+.SecondBG {
+    color:#f2f2f2;
+     display: flex;
+      justify-content: space-around;
+    align-items: center;
+}
+
+
+.ThirdBG {
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:800px;
+    overflow: auto;
+}
+
+.bluebg{
+    background-color: #071629;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+/*Main: Text*/
+
+.title{
+    color:#f2f2f2;
+    font-family:"source sans pro", serif;
+}
+
+.comment {
+    color:black;
+    
+    padding: 4rem;}
+   
+
+
+
+
+
+
+#whatwedo{
+    color:black;
+}
+
+
+.p1{
+color:black;
+text-align: center;
+padding: 4rem;
+
+}
+.btn{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+ width:162px;
+ height: 44px;
+    background-color: #FF6565;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin:3em auto;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #e0f7fa;
+    font-size: 14px;}}
+
+footer div{
+    display: flex;
+  justify-content: space-around;
+    align-items: center;
+    margin:1em;
+}
+.icons{ 
+    gap:2rem;
+}
+footer p{
+    text-align: center;
+    padding: 3em;
+    color:lightslategrey;
+}
