@@ -30,4 +30,4 @@ This is a simple, responsive website built using **HTML**, **CSS**, and **JavaSc
 
 ## 📁 Project Structure
 
-![Homepage](./Home%20.png)
+![Homepage](./home%20.png)
