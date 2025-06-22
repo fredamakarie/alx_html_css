@@ -27,7 +27,4 @@ This is a simple, responsive website built using **HTML**, **CSS**, and **JavaSc
 - **JavaScript (Vanilla)** — DOM manipulation for responsive menu
 
 ---
-
-## 📁 Project Structure
-
-![Homepage](./home.png)
+![Homepage Screenshot](images/home.PNG)
