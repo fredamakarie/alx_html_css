@@ -1,0 +1,301 @@
+
+/*General styling*/
+*{
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin:0;
+ padding:0;
+ text-align: center;
+ line-height: 2;
+}
+@font-face {
+  font-family: 'source sans pro';
+  src: url("./Images/SourceSansPro-Regular.otf") format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*header*/
+header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding-top: 3rem;
+}
+
+nav{
+    text-decoration: none;
+    display:flex;
+    list-style: none;
+    gap : 2em;
+    font-weight: bold;
+     color: white;
+    font-size: 12px;
+}
+
+a{
+text-decoration: none;
+color: white;}
+
+nav a:hover{
+transition: 0.3s ease;
+color: #FF6565;
+
+}
+
+.holberton_school-icon-menu {
+   display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:white;
+}
+
+/*Main: Backgrounds*/
+main{
+    padding: 10rem;
+}
+
+.CoverBG {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+.SecondBG {
+    color:#f2f2f2;
+    padding: 4rem;
+  
+}
+
+.ThirdBG {
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:100%;
+  
+}
+
+.bluebg{
+    background-color: #071629;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+/*Main: Text*/
+
+.title{
+    color:#f2f2f2;
+    font-family:"source sans pro", serif;
+    padding-top: 6rem;
+}
+
+h1{
+color: #f2f2f2;
+font-size: 2rem ;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1rem;
+    color:black;
+}
+
+.comment {
+    color:black;
+}
+   
+#whatwedo{
+    display: block;
+    padding: 3rem;
+}
+
+.p1{
+color:black;
+text-align: center;
+padding-top: 4rem;
+}
+
+.btn{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+ width:162px;
+ height: 44px;
+    background-color: #FF6565;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin:3em auto;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.iconsection{
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    
+}
+
+.iconsection span{
+    font-size: 68px;
+    color:#FF6565;
+    
+}
+
+.holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing{
+    transition: color 0.3s ease;
+}
+
+.holberton_school-icon-ic_sound:hover, .holberton_school-icon-ic_video:hover, .holberton_school-icon-ic_music:hover, .holberton_school-icon-ic_hearing:hover{
+    color:purple;
+}
+
+.overlay-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.photo-container {
+  position: relative;
+ 
+}
+
+.results{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 4rem;
+gap:1rem;
+
+}
+
+.pentagon {
+  width: 200px;
+  height: 200px;
+  background: #FF6565;
+clip-path: polygon(
+    /*79.39% 90.45%,       
+    20.61% 90.45%,     
+   2.45% 34.55%,     
+    50% 0%,     
+    /*97.55% 34.55% */     
+    
+    
+    50% 0%,       /* Top point */
+    100% 38%,     /* Right top */
+    82% 100%,     /* Right bottom */
+    18% 100%,     /* Left bottom */
+    0% 38%
+  );
+}
+
+.clipped-banner {
+  background: #FF6565;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  clip-path: polygon(
+    50% 0%,       /* Top point */
+    100% 38%,     /* Right top */
+    82% 100%,     /* Right bottom */
+    18% 100%,     /* Left bottom */
+    0% 38%);
+  /* shape: top-right angle clipped */
+  font-family: sans-serif;
+   
+}
+
+
+
+#ourresults{
+    padding: 6rem;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #e0f7fa;
+    font-size: .75rem;}}
+
+@media (max-width: 480px) {
+  .holberton_school-icon-menu {
+    display: block;
+  }
+
+  nav{
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background: #444;
+    flex-direction: column;
+    width: 10rem;
+    padding: 1rem;
+    display: none; /* hidden by default */
+  }
+
+  nav.show {
+    display: flex;
+  }
+}
+
+
+form{
+    padding: 4rem;
+    max-width: 400px;
+  margin: 2rem auto;
+  
+}
+
+label{
+    display: block;
+  font-weight:bolder;
+  color: #333;
+  text-align: left;
+}
+
+form input{
+    border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  font-size: 1rem;
+  padding:0.5rem,0;
+  width: 100%;
+  transition: border-color 0.3s
+}
+
+footer .footer{
+    display: flex;
+  justify-content: space-around;
+    align-items: center;
+    margin:3em;
+}
+
+.icons{ 
+    gap:2rem;
+}
+
+footer span{
+    font-size: 32px;
+}
+
+footer p{
+    text-align: center;
+    padding: 3em;
+    color:lightslategrey;
+}

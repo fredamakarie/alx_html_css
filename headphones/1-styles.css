@@ -4,6 +4,7 @@
  margin:0;
  padding:0;
  text-align: center;
+ line-height: 2;
 }
 @font-face {
   font-family: 'source sans pro';
@@ -32,12 +33,12 @@ nav{
 
 a{
 text-decoration: none;
-color: white;
-}
+color: white;}
 
 nav a:hover{
 transition: 0.3s ease;
 color: #FF6565;
+
 }
 
 /*Main: Backgrounds*/
@@ -51,16 +52,13 @@ main{
     background-position:top center;
     background-repeat: no-repeat;
     height:800px;
-    overflow: auto;
 }
 
 .SecondBG {
     color:#f2f2f2;
-     display: flex;
-      justify-content: space-around;
-    align-items: center;
+    
+  
 }
-
 
 .ThirdBG {
     background-image: url(./images/headphones_hero_2.jpg);
@@ -85,26 +83,37 @@ main{
 .title{
     color:#f2f2f2;
     font-family:"source sans pro", serif;
-    padding-top: 4em;
+    padding-top: 6rem;
+}
+
+h1{
+color: #f2f2f2;
+font-size: 2rem ;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1rem;
+    color:black;
 }
 
 .comment {
     color:black;
-    
-    padding: 4rem;
 }
    
 #whatwedo{
-    color:black;
+    display: block;
+    padding: 3rem;
 }
-
 
 .p1{
 color:black;
 text-align: center;
-padding: 4rem;
-
+padding-top: 4rem;
 }
+
 .btn{
     display: flex;
   align-items: center;
@@ -120,20 +129,67 @@ padding: 4rem;
     margin:3em auto;
 }
 
+.iconsection{
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    
+}
+
+.iconsection span{
+    font-size: 68px;
+    color:#FF6565;
+}
+
+.overlay-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.photo-container {
+  position: relative;
+ 
+}
+
+.results{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding-top: 4rem;
+
+}
+
+#ourresults{
+    padding: 6rem;
+}
+
 @media (max-width: 480px) {
   body {
     background-color: #e0f7fa;
     font-size: 14px;}}
 
-footer div{
+
+footer .footer{
     display: flex;
   justify-content: space-around;
     align-items: center;
-    margin:1em;
+    margin:3em;
 }
+
 .icons{ 
     gap:2rem;
 }
+
+form{
+    padding: 4rem;
+}
+
+footer span{
+    font-size: 32px;
+}
+
 footer p{
     text-align: center;
     padding: 3em;

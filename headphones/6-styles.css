@@ -1,9 +1,11 @@
+
 /*General styling*/
 *{
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  margin:0;
  padding:0;
  text-align: center;
+ line-height: 2;
 }
 @font-face {
   font-family: 'source sans pro';
@@ -32,12 +34,12 @@ nav{
 
 a{
 text-decoration: none;
-color: white;
-}
+color: white;}
 
 nav a:hover{
 transition: 0.3s ease;
 color: #FF6565;
+
 }
 
 /*Main: Backgrounds*/
@@ -50,25 +52,22 @@ main{
     background-size: cover;
     background-position:top center;
     background-repeat: no-repeat;
-    height:800px;
-    overflow: auto;
+    height:100%;
 }
 
 .SecondBG {
     color:#f2f2f2;
-     display: flex;
-      justify-content: space-around;
-    align-items: center;
+    padding: 4rem;
+  
 }
-
 
 .ThirdBG {
     background-image: url(./images/headphones_hero_2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:800px;
-    overflow: auto;
+    height:100%;
+  
 }
 
 .bluebg{
@@ -85,26 +84,37 @@ main{
 .title{
     color:#f2f2f2;
     font-family:"source sans pro", serif;
-    padding-top: 4em;
+    padding-top: 6rem;
+}
+
+h1{
+color: #f2f2f2;
+font-size: 2rem ;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1rem;
+    color:black;
 }
 
 .comment {
     color:black;
-    
-    padding: 4rem;
 }
    
 #whatwedo{
-    color:black;
+    display: block;
+    padding: 3rem;
 }
-
 
 .p1{
 color:black;
 text-align: center;
-padding: 4rem;
-
+padding-top: 4rem;
 }
+
 .btn{
     display: flex;
   align-items: center;
@@ -120,20 +130,125 @@ padding: 4rem;
     margin:3em auto;
 }
 
+.iconsection{
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    
+}
+
+.iconsection span{
+    font-size: 68px;
+    color:#FF6565;
+}
+
+.overlay-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.photo-container {
+  position: relative;
+ 
+}
+
+.results{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 4rem;
+gap:1rem;
+
+}
+
+.pentagon {
+  width: 200px;
+  height: 200px;
+  background: #FF6565;
+clip-path: polygon(
+    /*79.39% 90.45%,       
+    20.61% 90.45%,     
+   2.45% 34.55%,     
+    50% 0%,     
+    /*97.55% 34.55% */     
+    
+    
+    50% 0%,       /* Top point */
+    100% 38%,     /* Right top */
+    82% 100%,     /* Right bottom */
+    18% 100%,     /* Left bottom */
+    0% 38%
+  );
+}
+
+.clipped-banner {
+  background: #FF6565;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  clip-path: polygon(
+    50% 0%,       /* Top point */
+    100% 38%,     /* Right top */
+    82% 100%,     /* Right bottom */
+    18% 100%,     /* Left bottom */
+    0% 38%);
+  /* shape: top-right angle clipped */
+  font-family: sans-serif;
+}
+
+#ourresults{
+    padding: 6rem;
+}
+
 @media (max-width: 480px) {
   body {
     background-color: #e0f7fa;
     font-size: 14px;}}
 
-footer div{
+
+
+
+form{
+    padding: 4rem;
+    max-width: 400px;
+  margin: 2rem auto;
+  
+}
+
+label{
+    display: block;
+  font-weight:bolder;
+  color: #333;
+  text-align: left;
+}
+
+form input{
+    border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  font-size: 1rem;
+  padding:0.5rem,0;
+  width: 100%;
+  transition: border-color 0.3s
+}
+
+footer .footer{
     display: flex;
   justify-content: space-around;
     align-items: center;
-    margin:1em;
+    margin:3em;
 }
+
 .icons{ 
     gap:2rem;
 }
+
+footer span{
+    font-size: 32px;
+}
+
 footer p{
     text-align: center;
     padding: 3em;
